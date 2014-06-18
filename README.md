@@ -7,9 +7,7 @@ big string, either writing it to a file or stdout.
 ## Usage
 
 ```
-virtualenv env/
-. env/bin/activate
-pip install .
+pip install allparts
 allparts a-bucket 'path/inside/bucket' -o afile
 ```
 
