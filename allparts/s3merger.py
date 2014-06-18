@@ -12,6 +12,9 @@ class S3Merger():
         self.parts = self.bucket.list(prefix=path)
         self._merge_parts()
 
+    def __str__(self):
+        return self.merged
+
     def _merge_parts(self):
         """Merge all part files into a single string and store it
         as self.merged
